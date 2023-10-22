@@ -204,6 +204,37 @@ h1 {
 
 }
 
+.bubble-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bubble {
+    position: absolute;
+    width: 50px; /* Largeur de la bulle */
+    height: 50px; /* Hauteur de la bulle */
+    border-radius: 50%; /* Pour obtenir une forme de cercle */
+    opacity: 0.7; /* Opacité de la bulle */
+    animation: float 5s infinite; /* Animation de flottement */
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(-50px) translateX(10px);
+        /*Ajustezlatrajectoiredelabulle*/:;
+        -webkit-transform: translateY(-50px) translateX(10px);
+        -moz-transform: translateY(-50px) translateX(10px);
+        -ms-transform: translateY(-50px) translateX(10px);
+        -o-transform: translateY(-50px) translateX(10px);
+}
+    /* Vous pouvez ajuster la trajectoire en jouant avec les valeurs translateY et translateX */
+}
+
+
 @media (max-width: 768px) {
 
 
